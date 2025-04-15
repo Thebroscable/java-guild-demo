@@ -19,11 +19,12 @@ public class DemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) {
 		HashMap<String, Integer> leaderboard = new HashMap<>();
-		leaderboard.put("Agnieszka Cieślak", 0);
-		leaderboard.put("Grzegorz Kasperski", 0);
+		leaderboard.put("Agnieszka Cieślak", 2);
+		leaderboard.put("Grzegorz Kasperski", 2);
 		leaderboard.put("Kamil Leśniak", 0);
-		leaderboard.put("Marcin Janczurewicz", 0);
-		leaderboard.put("Michał Surowiec", 0);
+		leaderboard.put("Marcin Janczurewicz", 1);
+		leaderboard.put("Michał Surowiec", 2);
+		leaderboard.put("Szymon Natanek", 0);
 
 		log.info("PARTICIPANT   |   SCORE");
 		for (Map.Entry<String, Integer> entry : leaderboard.entrySet()) {
